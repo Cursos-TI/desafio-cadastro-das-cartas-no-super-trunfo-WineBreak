@@ -1,18 +1,18 @@
-#include <stdio.h>
-
-int main() {
-    char estado1[30], estado2[30]; 
-    char nome_da_cidade1[30], nome_da_cidade2[30];
-    int populacao1, n_pontos_turisticos1; 
-    int populacao2, n_pontos_turisticos2;
-    float area1, area2;
-    float pib1, pib2;
-    float densidade_populacional1, pib_per_capita1;
-    float densidade_populacional2, pib_per_capita2;
-
+#include <stdio.h> // Inicialização do programa
+//aqui vamos declarar todas as variaveis e seus tipos as quais iremos usar durante o programa
+int main() { 
+    char estado1[30], estado2[30]; //variavel char que é uma string que suporta 30 caracteres
+    char nome_da_cidade1[30], nome_da_cidade2[30]; //aqui declaramos o nome da cidade
+    int populacao1, n_pontos_turisticos1;  // população e numero de pontos turisticos da primeira carta 
+    int populacao2, n_pontos_turisticos2; // população e numero de pontos turisticos da segunda carta
+    float area1, area2; // variavel float da area da primeira e da segunda carta
+    float pib1, pib2; // variavel float do pib das duas cartas
+    float densidade_populacional1, pib_per_capita1; // essas duas variaveis iram servir para calculo de densidade populacional e pib per capita da primeira carta
+    float densidade_populacional2, pib_per_capita2; // essas duas variaveis iram servir para calculo de densidade populacional e pib per capita da primeira carta
+    //iniciando a chamada das variaveis
     printf("\nBEM VINDO AO SUPER TRUNFO PAÍSES!\n");
     printf("\n---------------------------------");
-
+    //aqui vamos perguntar ao ususario sobre os dados da primeira carta
     printf("\nDigite uma opção de A a H que irá representar um Estado da CARTA 01:");
     scanf("%s", &estado1);
 
@@ -30,10 +30,10 @@ int main() {
 
     printf("Digite o número de Pontos Turisticos: ");
     scanf("%d", &n_pontos_turisticos1);
-
-    densidade_populacional1 = populacao1 / area1;
-    pib_per_capita1 = pib1 / populacao1;
-
+    
+    densidade_populacional1 = populacao1 / area1; // calculo da densidade populacional que é igual a divisão da população pela area
+    pib_per_capita1 = pib1 / populacao1; // calculo do pib per capita que é igual a divisão do pib pela população 
+    //aqui vamos perguntar ao ususario sobre os dados da segunda carta
     printf("\nDigite uma opção de A a H que irá representar um Estado da CARTA 02:");
     scanf("%s", &estado2);
 
@@ -52,9 +52,9 @@ int main() {
     printf("Digite o número de Pontos Turisticos: ");
     scanf("%d", &n_pontos_turisticos2);
 
-    densidade_populacional2 = populacao2 / area2;
-    pib_per_capita2 = pib2 / populacao2;
-
+    densidade_populacional2 = populacao2 / area2; // calculo da densidade populacional que é igual a divisão da população pela area
+    pib_per_capita2 = pib2 / populacao2; // calculo do pib per capita que é igual a divisão do pib pela população
+    //aqui os valores serão imprimidos abaixo, seguindo uma sequência clara e objetiva para cada carta
     printf("\n");
     printf("\n---------------------------------\n");
     printf("CARTA 01\n");
